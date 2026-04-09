@@ -1,0 +1,4 @@
+Task01/progression/vendor/
+Task01/progression/composer.phar
+Task01/progression/.phpunit.result.cache
+*.log
