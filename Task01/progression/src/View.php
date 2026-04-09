@@ -42,5 +42,5 @@ function renderResult(
 
     line('"%s" is wrong answer ;(. Correct answer was "%s".', $answer, $hiddenValue);
     line('Full progression: %s', $fullProgression);
-    line('Let''s try again, %s!', $playerName);
+    line('Let\'s try again, %s!', $playerName);
 }
