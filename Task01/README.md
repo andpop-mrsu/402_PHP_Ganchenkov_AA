@@ -19,4 +19,4 @@ php bin/progression
 
 ## Packagist
 
-Ссылка на пакет будет добавлена после публикации репозитория игры на GitHub и регистрации пакета на Packagist.
+https://packagist.org/packages/relflly/progression
