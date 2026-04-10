@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task03 Progression SPA</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<div class="page">
+    <header class="hero">
+        <div>
+            <p class="eyebrow">Task03</p>
+            <h1>Progression SPA</h1>
+            <p class="subtitle">Single Page Application на Slim с REST API и базой данных SQLite.</p>
+        </div>
+        <div class="hero-actions">
+            <button id="reload-games" type="button">Обновить список игр</button>
+        </div>
+    </header>
+
+    <section class="grid">
+        <article class="panel">
+            <h2>Новая игра</h2>
+            <form id="new-game-form" class="stack">
+                <label for="player-name">Имя игрока</label>
+                <input id="player-name" name="playerName" type="text" maxlength="100" required>
+                <button type="submit">Создать игру</button>
+            </form>
+            <p class="hint">Сервер сам сгенерирует арифметическую прогрессию и сохранит новую игру в SQLite.</p>
+        </article>
+
+        <article class="panel">
+            <div class="section-head">
+                <h2>Текущая игра</h2>
+                <span id="current-status" class="badge">Не выбрана</span>
+            </div>
+
+            <div id="current-game" class="stack">
+                <p>Создайте новую игру или выберите запись из истории.</p>
+            </div>
+        </article>
+    </section>
+
+    <section class="panel">
+        <div class="section-head">
+            <h2>История игр</h2>
+            <span id="games-count" class="badge">0 игр</span>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Игрок</th>
+                        <th>Создано</th>
+                        <th>Статус</th>
+                        <th>Ходы</th>
+                        <th>Детали</th>
+                    </tr>
+                </thead>
+                <tbody id="games-table-body">
+                    <tr>
+                        <td colspan="6">Загрузка...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="flash" class="flash hidden"></section>
+</div>
+
+<script src="/assets/app.js"></script>
+</body>
+</html>
